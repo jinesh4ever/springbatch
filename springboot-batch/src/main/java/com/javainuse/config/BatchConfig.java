@@ -63,6 +63,7 @@ public class BatchConfig {
   dataSource.setPassword("openpgpwd");
   }catch(Exception e) {
 	  e.printStackTrace();
+	  System.out.println(e.getMessage());
   }
   
   return dataSource;
