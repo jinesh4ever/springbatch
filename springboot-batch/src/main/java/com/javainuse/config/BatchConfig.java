@@ -56,10 +56,14 @@ public class BatchConfig {
  @Bean
  public DataSource dataSource() {
   final DriverManagerDataSource dataSource = new DriverManagerDataSource();
+  try{
   dataSource.setDriverClassName("org.postgresql.Driver");
   dataSource.setUrl("jdbc:postgresql://localhost:5432/springbatch");
   dataSource.setUsername("postgres");
   dataSource.setPassword("openpgpwd");
+  }catch(Exception e) {
+	  e.printStackTrace();
+  }
   
   return dataSource;
  }
