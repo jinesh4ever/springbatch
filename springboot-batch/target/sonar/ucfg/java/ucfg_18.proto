@@ -1,0 +1,56 @@
+
+gcom.javainuse.processor.UserItemProcessor#process(Lcom/javainuse/model/User;)Lcom/javainuse/model/User;
+__unknown_file (user"paramAnnotations*ã	
+1 
+•C:\Users\jinesh\eclipse-workspace\springboot-batch-database\springbatch\springboot-batch\src\main\java\com\javainuse\processor\UserItemProcessor.java (Ñ
+Î
+ 
+•C:\Users\jinesh\eclipse-workspace\springboot-batch-database\springbatch\springboot-batch\src\main\java\com\javainuse\processor\UserItemProcessor.java (
+%0"__id**
+java.lang.System"
+outå
+â
+ 
+•C:\Users\jinesh\eclipse-workspace\springboot-batch-database\springbatch\springboot-batch\src\main\java\com\javainuse\processor\UserItemProcessor.java0 (?
+%1"-java.lang.Object#toString()Ljava/lang/String;*
+
+userß
+Ü
+ 
+•C:\Users\jinesh\eclipse-workspace\springboot-batch-database\springbatch\springboot-batch\src\main\java\com\javainuse\processor\UserItemProcessor.java (?
+%2"__concat*
+user-----------------------*
+
+%1ì
+é
+ 
+•C:\Users\jinesh\eclipse-workspace\springboot-batch-database\springbatch\springboot-batch\src\main\java\com\javainuse\processor\UserItemProcessor.java (@
+%3".java.io.PrintStream#print(Ljava/lang/String;)V*
+
+%0*
+
+%2"­
+ 
+•C:\Users\jinesh\eclipse-workspace\springboot-batch-database\springbatch\springboot-batch\src\main\java\com\javainuse\processor\UserItemProcessor.java (
+
+user*Þ
+paramAnnotations 
+•C:\Users\jinesh\eclipse-workspace\springboot-batch-database\springbatch\springboot-batch\src\main\java\com\javainuse\processor\UserItemProcessor.java (Ú
+×
+ 
+•C:\Users\jinesh\eclipse-workspace\springboot-batch-database\springbatch\springboot-batch\src\main\java\com\javainuse\processor\UserItemProcessor.java
+ 
+(
+
+%4"
+__annotate*
+java.lang.Override*
+
+userÄ
+Á
+ 
+•C:\Users\jinesh\eclipse-workspace\springboot-batch-database\springbatch\springboot-batch\src\main\java\com\javainuse\processor\UserItemProcessor.java (
+user"__annotation*
+
+%4*
+1

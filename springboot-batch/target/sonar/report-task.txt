@@ -1,0 +1,7 @@
+organization=jinesh4ever-github
+projectKey=springbatch
+serverUrl=https://sonarcloud.io
+serverVersion=7.6.0.20657
+dashboardUrl=https://sonarcloud.io/project/issues?id=springbatch&pullRequest=5&resolved=false
+ceTaskId=AWfuH7KKf5zeT90J2fbL
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AWfuH7KKf5zeT90J2fbL

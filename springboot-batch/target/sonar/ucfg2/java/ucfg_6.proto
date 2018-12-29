@@ -1,0 +1,72 @@
+
+fcom.javainuse.config.BatchConfig$UserRowMapper#mapRow(Ljava/sql/ResultSet;I)Lcom/javainuse/model/User;
+__unknown_file ("paramAnnotations*é
+1™
+ŒC:\Users\jinesh\eclipse-workspace\springboot-batch-database\springbatch\springboot-batch\src\main\java\com\javainuse\config\BatchConfig.java‡ ‡(ÙÖ
+™
+ŒC:\Users\jinesh\eclipse-workspace\springboot-batch-database\springbatch\springboot-batch\src\main\java\com\javainuse\config\BatchConfig.java‡ ‡(
+%0com.javainuse.model.User"com.javainuse.model.Userë
+è
+™
+ŒC:\Users\jinesh\eclipse-workspace\springboot-batch-database\springbatch\springboot-batch\src\main\java\com\javainuse\config\BatchConfig.java‡ ‡(
+%1""com.javainuse.model.User#<init>()V* 
+
+%0com.javainuse.model.Useré
+æ
+™
+ŒC:\Users\jinesh\eclipse-workspace\springboot-batch-database\springbatch\springboot-batch\src\main\java\com\javainuse\config\BatchConfig.java‡ ‡( 
+usercom.javainuse.model.User"__id* 
+
+%0com.javainuse.model.Userš—
+™
+ŒC:\Users\jinesh\eclipse-workspace\springboot-batch-database\springbatch\springboot-batch\src\main\java\com\javainuse\config\BatchConfig.javaˆ ˆ(	
+%2int".java.sql.ResultSet#getInt(Ljava/lang/String;)I*
+
+rsjava.sql.ResultSet*
+id2getInt(Ljava/lang/String;)®«
+™
+ŒC:\Users\jinesh\eclipse-workspace\springboot-batch-database\springbatch\springboot-batch\src\main\java\com\javainuse\config\BatchConfig.javaˆ ˆ(
+
+%3void"4com.javainuse.model.User#setId(Ljava/lang/Integer;)V*"
+ 
+usercom.javainuse.model.User*
+	
+%2int2setId(Ljava/lang/Integer;)À½
+™
+ŒC:\Users\jinesh\eclipse-workspace\springboot-batch-database\springbatch\springboot-batch\src\main\java\com\javainuse\config\BatchConfig.java‰ ‰($
+%4java.lang.String"Bjava.sql.ResultSet#getString(Ljava/lang/String;)Ljava/lang/String;*
+
+rsjava.sql.ResultSet*
+name2getString(Ljava/lang/String;)½º
+™
+ŒC:\Users\jinesh\eclipse-workspace\springboot-batch-database\springbatch\springboot-batch\src\main\java\com\javainuse\config\BatchConfig.java‰ ‰(%
+
+%5void"5com.javainuse.model.User#setName(Ljava/lang/String;)V*"
+ 
+usercom.javainuse.model.User*
+
+%4java.lang.String2setName(Ljava/lang/String;)"À
+™
+ŒC:\Users\jinesh\eclipse-workspace\springboot-batch-database\springbatch\springboot-batch\src\main\java\com\javainuse\config\BatchConfig.java‹ ‹("
+ 
+usercom.javainuse.model.User*í
+paramAnnotations™
+ŒC:\Users\jinesh\eclipse-workspace\springboot-batch-database\springbatch\springboot-batch\src\main\java\com\javainuse\config\BatchConfig.java† †(.å
+â
+™
+ŒC:\Users\jinesh\eclipse-workspace\springboot-batch-database\springbatch\springboot-batch\src\main\java\com\javainuse\config\BatchConfig.java… …(
+%6"
+__annotate*
+java.lang.Override*
+
+rsjava.sql.ResultSetÏ
+Ì
+™
+ŒC:\Users\jinesh\eclipse-workspace\springboot-batch-database\springbatch\springboot-batch\src\main\java\com\javainuse\config\BatchConfig.java† †(!
+rsjava.sql.ResultSet"__annotation*
+
+%6*
+1:
+rsjava.sql.ResultSet:
+""B20
+.com.javainuse.config.BatchConfig$UserRowMapper
