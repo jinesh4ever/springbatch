@@ -8,6 +8,7 @@ import javax.sql.DataSource;
 
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.JobExecution;
+import org.springframework.batch.core.JobExecutionListener;
 import org.springframework.batch.core.JobParameters;
 import org.springframework.batch.core.JobParametersBuilder;
 import org.springframework.batch.core.Step;
@@ -34,6 +35,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
+import org.springframework.context.annotation.PropertySources;
 import org.springframework.core.io.FileSystemResource;
 import org.springframework.core.io.Resource;
 import org.springframework.jdbc.core.RowMapper;
@@ -41,13 +44,22 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.scheduling.annotation.Scheduled;
 
 import com.ufs.batch.common.Common;
+import com.ufs.batch.listener.JobCompletionListener;
 import com.ufs.batch.model.UfsFulfillment;
 import com.ufs.batch.processor.UserItemProcessor;
 
-
+@PropertySources({ @PropertySource("classpath:config.properties") })
 @Configuration
 @EnableBatchProcessing
 public class BatchConfig {
+	@Value("${jdbc.driver}")
+	private String jdbcdriver;
+	@Value("${jdbc.username}")
+	private String jdbcusername;
+	@Value("${jdbc.password}")
+	private String jdbcpassword;
+	@Value("${jdbc.url}")
+	private String jdbcurl;
 
 	@Autowired
 	private SimpleJobLauncher jobLauncher;
@@ -71,10 +83,11 @@ public class BatchConfig {
 	public DataSource dataSource() {
 		final DriverManagerDataSource dataSource = new DriverManagerDataSource();
 		try {
-			dataSource.setDriverClassName("org.postgresql.Driver");
-			dataSource.setUrl("jdbc:postgresql://localhost:5432/springbatch");
-			dataSource.setUsername("postgres");
-			dataSource.setPassword("openpgpwd");
+			dataSource.setDriverClassName(jdbcdriver);
+			dataSource.setUrl(jdbcurl);
+			dataSource.setUsername(jdbcusername);
+			dataSource.setPassword(jdbcpassword);
+			
 		} catch (Exception e) {
 		}
 
@@ -193,7 +206,7 @@ public class BatchConfig {
 
 	@Bean
 	public Job exportUserJob() {
-		return jobBuilderFactory.get("exportUserJob").incrementer(new RunIdIncrementer()).start(step1()).next(step2()).next(step3())
+		return jobBuilderFactory.get("exportUserJob").incrementer(new RunIdIncrementer()).listener(listener()).start(step1()).next(step2()).next(step3())
 				.build();
 	}
 	
@@ -237,6 +250,11 @@ public class BatchConfig {
 		factory.afterPropertiesSet();
 
 		return factory;
+	}
+	
+	@Bean
+	public JobExecutionListener listener() {
+		return new JobCompletionListener();
 	}
 
 }
